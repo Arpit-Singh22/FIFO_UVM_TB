@@ -1,0 +1,28 @@
+import uvm_pkg::*;
+`include "uvm_pkg.sv"
+`include "asynchronous_fifo.v"
+`include "fifo_interface.sv"
+`include "fifo_config_db.sv"
+`include "fifo_common.sv"
+
+`include "./fifo_wr_agent/fifo_wr_tx.sv"
+`include "./fifo_wr_agent/fifo_wr_base_seq_lib.sv"
+`include "./fifo_wr_agent/fifo_wr_sequencer.sv"
+`include "./fifo_wr_agent/fifo_wr_driver.sv"
+`include "./fifo_wr_agent/fifo_wr_mon.sv"
+`include "./fifo_wr_agent/fifo_wr_cov.sv"
+`include "./fifo_wr_agent/fifo_wr_agent.sv"
+
+`include "./fifo_rd_agent/fifo_rd_tx.sv"
+`include "./fifo_rd_agent/fifo_rd_base_seq_lib.sv"
+`include "./fifo_rd_agent/fifo_rd_sequencer.sv"
+`include "./fifo_rd_agent/fifo_rd_driver.sv"
+`include "./fifo_rd_agent/fifo_rd_mon.sv"
+`include "./fifo_rd_agent/fifo_rd_cov.sv"
+`include "./fifo_rd_agent/fifo_rd_agent.sv"
+
+`include "fifo_sbd.sv"
+`include "fifo_env.sv"
+`include "fifo_test_lib.sv"
+`include "fifo_assertion.sv"
+`include "top.sv"
